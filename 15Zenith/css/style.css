@@ -1,0 +1,529 @@
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}  
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: block;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background-color: white;
+}
+header img {
+    height: 50px;
+    padding: 5px 20px;
+    float: left;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding-right: 80px;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+nav li {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+nav a:hover {
+    /* box-shadow: 0 3px 5px 0 grey; */
+    background-color: rgba(211, 211, 211, 1);
+}
+.main-body {
+   max-width: 100%;
+   margin: 0 auto;
+}
+.hook {
+    margin: 80px auto auto auto;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.hook article {
+    margin: auto;
+}
+.hook img {
+    border: 2px solid rgb(100,100,100);
+    font-family: 'Bebas Neue', cursive;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.hook figure {
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.hook p {
+    font-size: 3.2rem;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+figcaption {
+    display: flex;
+    justify-content: center;
+}
+q {
+    margin: 0;
+    font-size: 1.1rem;
+    color: grey;
+    font-family: 'Bebas Neue', cursive;
+}
+.content {
+    margin: 45px auto; 
+    width: 70%;
+}
+.content li {
+    padding-left: 1rem;
+    list-style-type: square;
+}
+.content p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1rem;
+}
+.content .bold {
+    font-weight: bold;
+}
+.content .urgent {
+    color: red;
+    font-weight: bold;
+}
+.content figure {
+    max-width: 25%;
+    float: right;
+}
+.faq figure {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+.content figure img {
+    border: 1px solid rgb(100,100,100);
+    width: 100%;
+}
+.content figure figcaption {
+    color: grey;
+    font-family: 'Bebas Neue', cursive;
+}
+footer {
+    background-color: rgb(80,80,80);
+    margin: 0;
+    color: white;
+    padding: .1rem 0;
+}
+footer a {
+    color: lightskyblue;
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+h3 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+.donate-button {
+    background-color: #10df7e;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 1rem 5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.donate-button:hover {
+    background-color: #00b964;
+    transition: .3s;
+}
+.extra-margin {
+    margin: 3rem 0;
+    margin: 45px auto; 
+}
+@media (max-width: 1065px) {
+    nav ul {
+        width: 85%;
+    }
+    .hook img {
+        border: 1px solid rgb(100,100,100);
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    p, q {
+        font-size: 1rem;
+    }
+    .content, .hook {
+        width: 80%;
+    }
+}
+@media (max-width: 890px) {
+    nav {
+        padding-right: 0;
+    }
+    .hook p {
+        font-size: 2.5rem;
+    }
+    .hook figure {
+        width: 50%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+} 
+@media (max-width: 620px) {
+    .hook p {
+        font-size: 1.8rem;
+        letter-spacing: .01rem;
+    }
+    q {
+        letter-spacing: .02rem;
+        font-size: .9rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: .9rem;
+    }
+    .content p, nav li {
+        font-size: .85rem;
+        line-height: 1.2rem;
+    }
+} 
+
+
+/* *********************************************
+******** Content below to be used later ******/
+/* *******************************************/
+.building {
+    display: flex;
+    justify-content: center;
+    line-height: 15px;
+}
+.building p {
+    font-family: default;
+    font-size: 1.75rem;
+}
+.red {
+    /* background-color: darkred; */
+    background-color: rgb(190, 0, 0);
+    height: 1030px;
+    width: 100px;
+    border-right: 10px solid rgb(140, 1, 1);
+    border-top: 3px solid rgb(160, 0, 0);
+    /* border-bottom: 2px solid  rgb(160, 0, 0); */
+    margin-top: 30px;
+    font-size: 29px;
+    color: darkgrey;
+    text-shadow: 1px 1px rgba(66, 66, 66, 0.521);
+    padding-left: 5px;
+}
+.yellow {
+    background-color: rgb(241, 183, 34);
+    /* background-color: goldenrod; */
+    height: 1040px;
+    width: 100px;
+    border-right: 11px solid rgb(185, 138, 19);
+    border-top: 3px solid rgb(213, 155, 27);
+    /* border-bottom: 4px solid rgb(213, 155, 27); */
+    margin-top: 15px;
+    font-size: 29px;
+    color: rgb(153, 153, 153);
+    text-shadow: 1px 1px rgba(66, 66, 66, 0.281);
+    padding-left: 1px;
+}
+.green {
+    background-color: rgb(83, 119, 108);
+    /* background-color: darkslategray; */
+    height: 1050px;
+    width: 100px;
+    border-right: 11px solid rgb(61, 78, 71);
+    border-top: 3px solid rgb(72, 100, 90);
+    /* border-bottom: 7px solid rgb(72, 100, 90); */
+    font-size: 29px;
+    color: darkgrey;
+    text-shadow: 1px 1px rgba(66, 66, 66, 0.521);
+    padding-left: 2px;
+}
+.people h5 {
+    font-size: 22px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 10px 0 0 0;
+    letter-spacing: 2px;
+}
+.people h6 {
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: -2px 0 8px 0;
+}
+.people article {
+    padding: 5px; 
+    position: absolute; 
+    /* transition: .5s; */
+}
+.people p {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0 10px;
+}
+
+.people .odds {
+    left: 62%;
+}
+.people .evens {
+    left: 25%;
+}
+.people img {
+    border-radius: 100px;
+    height: 60px;
+    margin: 3px 10px 3px 3px;
+}
+.flex-parent {
+    display: flex;
+    cursor: pointer;
+}
+@media (max-width: 1065px) {
+    .people .odds {
+        left: 69%;
+    }
+    .people .evens {
+        left: 16%;
+    }
+}
+@media (max-width: 890px) {
+    .people .odds {
+        left: 75%;
+    }
+    .people .evens {
+        left: 7%;
+    }
+}
+@media (max-width: 620px) {
+    .people .odds {
+        left: 82%;
+    }
+    .people .evens {
+        left: 0;
+    }
+    .flex-parent {
+        display: block;
+    }
+}
+.hover:hover {
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473); */
+    background-color: white;
+    opacity: .7;
+    /* background-color: rgb(220,220,220); */
+    /* border-radius: 10px; */
+    /* padding: 5px 5px 0 5px; */
+}
+
+.show-fifteen, .show-fourteen, .show-thirteen, .show-twelve, .show-eleven {
+    /* border: 1px solid rgb(182, 182, 182); */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.473);
+    /* background-color: rgb(220,220,220); */
+    background-color: white;
+    max-width: 250px; 
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    /* border-radius: 0 0 10px 0;   */
+}
+
+/****************************************************/
+/********************* Floor 15 *********************/
+/****************************************************/
+.fifteen {
+    top: 1160px;
+}
+/* .show-fifteen {
+    border: 2px solid rgb(100,100,100);
+    background-color: rgb(220,220,220);
+    border-radius: 10px;
+} */
+.hide-fifteen {
+    font-weight: normal;
+    float: right;
+    display: none;
+}
+.hide-fifteen:hover {
+    color: white;
+}
+.p15 {
+    display: none;
+}
+.show-p15 {
+    display: flex;
+}
+
+/****************************************************/
+/********************* Floor 14 *********************/
+/****************************************************/
+.fourteen {
+    top: 1185px;
+}
+/* .show-fourteen {
+    border: 2px solid rgb(100,100,100);
+    background-color: rgb(220,220,220);
+    border-radius: 10px;
+} */
+.hide-fourteen {
+    font-weight: normal;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+.hide-fourteen:hover {
+    color: white;
+}
+.p14 {
+    display: none;
+}
+.show-p14 {
+    display: flex;
+}
+
+
+/****************************************************/
+/********************* Floor 13 *********************/
+/****************************************************/
+.thirteen {
+    top: 1300px;
+}
+.p13 {
+    display: none;
+}
+.show-p13 {
+    display: flex;
+}
+
+
+/****************************************************/
+/********************* Floor 12 *********************/
+/****************************************************/
+.twelve {
+    top: 1310px;
+}
+.p12 {
+    display: none;
+}
+.show-p12 {
+    display: flex;
+}
+
+/****************************************************/
+/********************* Floor 11 *********************/
+/****************************************************/
+.eleven {
+    top: 1430px;
+}
+.p11 {
+    display: none;
+}
+.show-p11 {
+    display: flex;
+}
+
+
+
+.ten {
+    top: 1430px;
+}
+
+.nine {
+    top: 1450px;
+}
+
+.eight {
+    top: 1570px;
+}
+
+.seven {
+    top: 1590px;
+}
+
+.six {
+    top: 1710px;
+}
+
+.five {
+    top: 1730px;
+}
+
+.four {
+    top: 1850px;
+}
+
+.three {
+    top: 1870px;
+}
+
+.two {
+    top: 1990px;
+}
+
+.one {
+    top: 2010px;
+}
+/* Below is a test of someone else's code.
+  .bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #000;
+    background: red;
+    z-index: 1;
+  }
+  .scrollPast {
+    width: 100%;
+    height: 150px;
+    background: blue;
+    position: relative;
+    top: 50px;
+    margin: 20px 0;
+  } */
